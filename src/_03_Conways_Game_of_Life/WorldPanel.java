@@ -120,37 +120,37 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
 				neighborsAlive++;
 			}
 		}
-		if (x != 0) {
+		if (x != 0 && y != 0) {
 			if (cel[x - 1][y - 1].isAlive) {
 				neighborsAlive++;
 			}
 		}
-		if (x != 0) {
+		if (y != 0) {
 			if (cel[x][y - 1].isAlive) {
 				neighborsAlive++;
 			}
 		}
-		if (x != 0) {
+		if (x != cellsPerRow-1) {
 			if (cel[x + 1][y].isAlive) {
 				neighborsAlive++;
 			}
 		}
-		if (x != 0) {
+		if (x != cellsPerRow-1 && y != cellsPerRow-1) {
 			if (cel[x + 1][y + 1].isAlive) {
 				neighborsAlive++;
 			}
 		}
-		if (x != 0) {
+		if (y != cellsPerRow-1) {
 			if (cel[x][y + 1].isAlive) {
 				neighborsAlive++;
 			}
 		}
-		if (x != 0) {
+		if (x != 0 && y != cellsPerRow-1) {
 			if (cel[x - 1][y + 1].isAlive) {
 				neighborsAlive++;
 			}
 		}
-		if (x != 0) {
+		if (x != cellsPerRow-1 && y != 0) {
 			if (cel[x + 1][y - 1].isAlive) {
 				neighborsAlive++;
 			}
